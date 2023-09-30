@@ -9,8 +9,8 @@ use App\Http\Controllers\ProjetDetailsController;
 
 
  
-Route::get('/', [AccueilController::class, 'index']);
-Route::get('/projets', [ProjetsController::class, 'index']);
+Route::get('/', [AccueilController::class, 'index'])->name('accueil');
+Route::get('/projets', [ProjetsController::class, 'index'])->name('projets');
 Route::get('/projet-realise/', [ProjetDetailsController::class, 'index']);
 
 

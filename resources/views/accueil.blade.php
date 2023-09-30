@@ -36,14 +36,39 @@
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="sr-only">Un peu de patience svp ...</span>
         </div>
     </div>
     <!-- Spinner End -->
 
 
     <!-- Navbar Start -->
-        @include('sections.navbar')
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="text-primary fw-bold m-0">ProMan</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="{{route('accueil')}}" class="nav-item nav-link active">Accueil</a>
+                <a href="#about" class="nav-item nav-link">A propos</a>
+                <a href="#skill" class="nav-item nav-link">Expériences</a>
+                <!-- <a href="#service" class="nav-item nav-link">Services</a> -->
+            </div>
+            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+                <h1 class="text-primary fw-bold m-0">LAGAMA</h1>
+            </a>
+            <div class="navbar-nav me-auto py-0">
+                <a href="#service" class="nav-item nav-link">Services</a>
+                <a href="{{route('projets')}}" class="nav-item nav-link">Projets</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
     <!-- Navbar End -->
 
 
@@ -502,30 +527,8 @@
 
 
     <!-- Copyright Start -->
-
-        @include('sections.footer')
-        
+    @include('sections.footer')
     <!-- Copyright End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/lib/wow/wow.min.js"></script>
-    <script src="assets/lib/easing/easing.min.js"></script>
-    <script src="assets/lib/waypoints/waypoints.min.js"></script>
-    <script src="assets/lib/typed/typed.min.js"></script>
-    <script src="assets/lib/counterup/counterup.min.js"></script>
-    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="assets/lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="assets/lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="assets/js/main.js"></script>
-</body>
-
-</html>
+    
