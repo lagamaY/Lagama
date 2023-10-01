@@ -55,15 +55,15 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-                <a href="{{route('accueil')}}" class="nav-item nav-link active">Accueil</a>
-                <a href="{{route('accueil')}}#about" class="nav-item nav-link">A propos</a>
-                <a href="#skill" class="nav-item nav-link">Expériences</a>
+                <a  href="{{route('accueil')}}" class="nav-item nav-link active">Accueil</a>
+                <a onClick="document.location.href='/#about'" href="#about" class="nav-item nav-link">A propos</a>
+                <a onClick="document.location.href='/#skill'" href="#skill" class="nav-item nav-link">Expériences</a>
             </div>
-            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+            <a href="/" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
                 <h1 class="text-primary fw-bold m-0">LAGAMA</h1>
             </a>
             <div class="navbar-nav me-auto py-0">
-                <a href="#service" class="nav-item nav-link">Services</a>
+                <a onClick="document.location.href='/#service'" href="#service" class="nav-item nav-link">Services</a>
                 <a href="{{route('projets')}}" class="nav-item nav-link">Projets</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
