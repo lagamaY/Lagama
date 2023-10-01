@@ -11,6 +11,6 @@ use App\Http\Controllers\ProjetDetailsController;
  
 Route::get('/', [AccueilController::class, 'index'])->name('accueil');
 Route::get('/projets', [ProjetsController::class, 'index'])->name('projets');
-Route::get('/projet-realise/', [ProjetDetailsController::class, 'index']);
+Route::get('/projet-realise/', [ProjetDetailsController::class, 'index'])->name('description');
 
 

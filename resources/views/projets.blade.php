@@ -1,4 +1,4 @@
-@include('sections.navbar')
+@include('sections.header')
 <!-- Projects Start -->
 <div class="container-xxl py-6 pt-5" id="project">
         <div class="container">
@@ -19,7 +19,7 @@
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="assets/img/project-1.jpg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{route('description')}}" ><i class="fa fa-eye"></i></a>
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
                         </div>
                     </div>
